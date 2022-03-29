@@ -1,0 +1,83 @@
+.about-container {
+  min-height: calc(100vh - (85px + 100px));
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.about-section {
+  margin-bottom: 80px;
+}
+
+.about-section h1 {
+  font-size: 32px;
+}
+
+.about-section h2 {
+  font-size: 26px;
+}
+
+.about-section p {
+  margin-bottom: 25px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about-section ul {
+  padding: 0;
+  font-size: 18px;
+}
+
+.about-section ul li {
+  padding-left: 1.5rem;
+  margin-left: 1.5rem;
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.about-section ul li:before {
+  content: "\2022 "; /* bullet icon */
+  position: absolute;
+  left: 0;
+  color: rgb(0, 0, 0, 0.8);
+  font-size: 40px;
+  line-height: 0.5;
+}
+
+.about-section ul li a {
+  text-decoration: none;
+  color: #587052;
+  border-bottom: 2px solid #efc93d;
+}
+
+.about-section ul li a:hover {
+  color: #03363d;
+  background: #ece0ce;
+  border-bottom: 2px solid #c38f00;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 0px) {
+  .about-section {
+    margin-bottom: 50px;
+  }
+  .about-section h1 {
+    font-size: 24px;
+  }
+  .about-section h2 {
+    font-size: 18px;
+  }
+  .about-section p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .about-section ul {
+    font-size: 13.5px;
+  }
+  .about-section ul li {
+    padding-left: 18px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+  }
+}

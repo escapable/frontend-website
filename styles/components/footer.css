@@ -1,0 +1,43 @@
+.footer-wrapper {
+  border: 0;
+  border-top: 2px solid #f9e9b1;
+  border-bottom: 0 solid transparent;
+  box-sizing: content-box;
+  overflow: visible;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-links a {
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  background-color: transparent;
+  color: gray;
+  padding-bottom: 2px;
+}
+
+.footer-links a:first-child {
+  text-decoration: none;
+  margin-left: 0px;
+}
+
+.footer-links a:hover {
+  border-bottom: 2px solid #efc93d;
+  color: #03363d;
+}
+
+.footer-bottom-msg {
+  margin-top: 25px;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 900px) and (min-width: 0px) {
+  .footer-links a {
+    display: block;
+    margin: 20px 0px 0px 0px;
+  }
+  .footer-bottom-msg {
+    font-size: 14px;
+  }
+}
