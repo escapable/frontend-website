@@ -6,7 +6,7 @@ export default class extends Component {
         return (
             <>
                 {
-                    process.env.NODE_ENV === "production" && ProcessingInstruction.browser ?
+                    process.env.NODE_ENV === "production" && process.browser ?
                     <Head>
                         <script async src={`https://www.googletagmanager.com/gtag/js?id${process.env.GOOGLE_ANALYTICS_ID}`}></script>
                         <script
