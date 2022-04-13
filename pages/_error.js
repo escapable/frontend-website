@@ -3,6 +3,7 @@ import { Component } from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import HeadMetadata from "../components/headMetadata.js"
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 export default class extends Component {
     static getInitialProps({ req, res, err }) {
@@ -17,7 +18,8 @@ export default class extends Component {
         return (
             <html>
                 <head>
-                <HeadMetadata title="error | escpabale.space blog" />
+                    <HeadMetadata title="error | escpabale.space blog" />
+                    <GoogleAnalytics />
                 </head>
                 <body>
 

@@ -3,6 +3,7 @@ import { Component } from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import HeadMetadata from "../components/headMetadata.js"
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 import getFiveNewestPosts from "../api/getFiveNewestPosts.js"
 
@@ -19,10 +20,12 @@ export default class extends Component {
         return (
             <html>
                 <head>
-                    <HeadMetadata title="escpabale.space blog" description="Posts about 1️⃣ full-stack development, 2️⃣ coding, 3️⃣ mathematics, 4️⃣ photography, 5️⃣ LGBTQIA+ advocacy, and probably some other stuff too." />
+                    <HeadMetadata title="escpabale.space" metaDescription="Posts about 1️⃣ full-stack development, 2️⃣ coding, 3️⃣ mathematics, 4️⃣ photography, 5️⃣ LGBTQIA+ advocacy, and probably some other stuff too." />
+                    <GoogleAnalytics />
                 </head>
                 <body>
                     <div className="layout-wrapper">
+                        
                         <Header />
                         <div className="homepage-container">
                             

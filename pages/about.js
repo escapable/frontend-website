@@ -3,6 +3,7 @@ import { Component } from "react"
 import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import HeadMetadata from "../components/headMetadata.js"
+import GoogleAnalytics from "../components/googleAnalytics.js"
 
 export default class extends Component {
     render () {
@@ -10,6 +11,7 @@ export default class extends Component {
             <html>
                 <head>
                     <HeadMetadata title="about | escpabale.space blog" description="Hi 👋 I'm MJ, a Solution Deployment Manager 🧑‍💻 and computer science grad student 🎓" />
+                    <GoogleAnalytics />
                 </head>
                 <body>
                     <div className="layout-wrapper">

@@ -4,6 +4,7 @@ import moment from "moment"
 import Header from "../../../components/header.js"
 import Footer from "../../../components/footer.js"
 import HeadMetadata from "../../../components/headMetadata.js"
+import GoogleAnalytics from "../../../components/googleAnalytics.js"
 import getBlogPostsByTag from "../../../api/getBlogPostsByTag.js"
 
 export default class extends Component {
@@ -22,6 +23,7 @@ export default class extends Component {
             <html>
                 <head>
                     <HeadMetadata title={`"${this.props.tag}" posts | escapable.space blog`} description={`All posts tagged as "${this.props.tag}".`} />
+                    <GoogleAnalytics />
                 </head>
                 <body>
                     <div className="layout-wrapper">
